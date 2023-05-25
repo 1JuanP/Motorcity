@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="cssmotor.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&display=swap" rel="stylesheet">
+<script src="JAVAMOTOR.js"></script>
+<head>
+    <title>Motorcity</title>
+    <style>
+		.car-img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.cara {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.cara h2 {
+			font-size: 24px;
+			color: darkcyan;
+		}
+
+		.cara p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.cara button {
+			background-color: darkcyan;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.cara button:hover {
+			background-color: #3f6497;
+		}
+
+		.carl {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carl h2 {
+			font-size: 24px;
+			color: goldenrod;
+		}
+
+		.carl p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carl button {
+			background-color: goldenrod;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carl button:hover {
+			background-color: darkgoldenrod;
+		}
+		.carf {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carf h2 {
+			font-size: 24px;
+			color: red;
+		}
+
+		.carf p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carf button {
+			background-color: red;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carf button:hover {
+			background-color: darkred;
+		}
+		
+		.carm {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carm h2 {
+			font-size: 24px;
+			color: #f58300;
+		}
+
+		.carm p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carm button {
+			background-color: #f58300;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carm button:hover {
+			background-color: #b86200;
+		}
+
+		.carma {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carma h2 {
+			font-size: 24px;
+			color: #00304d;
+		}
+
+		.carma p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carma button {
+			background-color: #00304d;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carma button:hover {
+			background-color: #001d2e;
+		}
+
+		
+		.carp {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carp h2 {
+			font-size: 24px;
+			color: #ffed61;
+		}
+
+		.carma p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carp button {
+			background-color: darkred;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carp button:hover {
+			background-color: black;
+		}
+	
+			
+		.carr {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carr h2 {
+			font-size: 24px;
+			color: black;
+		}
+
+		.carr p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carr button {
+			background-color: black;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carr button:hover {
+			background-color: black;
+		}
+
+		.carj {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carj h2 {
+			font-size: 24px;
+			color: #20760f;
+		}
+
+		.carj p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carj button {
+			background-color: #20760f;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.carj button:hover {
+			background-color: #385232;
+		}
+
+		.cart {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.cart h2 {
+			font-size: 24px;
+			color: red;
+		}
+
+		.cart p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.cart button {
+			background-color: red;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.cart button:hover {
+			background-color: darkred;
+		}
+
+		.carme {
+			display: inline-block;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			text-align: center;
+			width: 300px;
+			height: 500px;
+			box-shadow: 5px 5px 5px grey;
+		}
+
+		.carme h2 {
+			font-size: 24px;
+			color: #9fa3a2;
+		}
+
+		.carme p {
+			font-size: 18px;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: justify;
+			padding: 0 20px;
+			height: 150px;
+			overflow: hidden;
+		}
+
+		.carme button {
+			background-color: #9fa3a2;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.5s;
+		}
+
+		.cart button:hover {
+			background-color: #545454;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Motorcity - Venta de autos de lujo</h1>
+		<div id="fecha"></div>
+
+    <nav>
+        <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="motorcitycarros.html">Que vendemos</a></li>
+          <li><a href="Motorcityprecios.html">Precios</a></li>
+          <li><a href="Galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+    </header>
+	<img class="car-img" src="ferrari.jpg" alt="Carros Ferrari en venta" width="200px" height="300px">
+
+	<div class="carf">
+		<h2>Ferrari 488 GTB</h2>
+		<img src="FERRARI488.jpg">
+		<p>El Ferrari 488 GTB es un automóvil deportivo de motor central-trasero, producido por el fabricante italiano Ferrari. Es el sucesor del Ferrari 458 Italia.</p>
+		<a href="Gracias.html"><button>Comprar</button></a>
+	</div>
+
+	<div class="carf">
+		<h2>Ferrari Portofino</h2>
+		<img src="ferrari_portofinom.jpg">
+		<p>El Ferrari Portofino es un automóvil deportivo producido por el fabricante italiano Ferrari.</p>
+		<a href="Gracias.html"><button>Comprar</button></a>
+        </div>
+        
+        <div class="carf">
+            <h2>Ferrari F8 Spider</h2>
+            <img src="ferrari f8 spider.jpg">
+            <p>El Ferrari F8 Spider es un automóvil deportivo descapotable producido por el fabricante italiano Ferrari.</p>
+			<a href="Gracias.html"><button>Comprar</button></a>
+        </div>
+
+		<div class="carf">
+            <h2>Ferrari 458</h2>
+            <img src="Ferrari 458.jpg">
+            <p>El Ferrari 458 es un automóvil deportivo de dos plazas y tracción trasera, producido por Ferrari entre los años 2009 y 2015.</p>
+			<a href="Gracias.html"><button>Comprar</button></a>
+        </div>
+
+		<img class="car-img" src="aston-martin.png" alt="Carros Aston Martin en venta" width="200px" height="300px">
+
+	<div class="cara">
+		<h2>Aston Martin DB11</h2>
+		<img src="AstonMartin db11.png">
+		<p>El Aston Martin DB11 es un automóvil deportivo de lujo producido por el fabricante británico Aston Martin desde 2016.</p>
+		<a href="Gracias.html"><button>Comprar</button></a>
+	</div>
+
+	<div class="cara">
+		<h2>Aston Martin Vantange</h2>
+		<img src="Aston Martin Vantage.jpg">
+		<p>El Aston Martin Vantage es un automóvil deportivo de dos plazas producido por Aston Martin desde el año 2005.</p>
+		<a href="Gracias.html"><button>Comprar</button></a>
+        </div>
+        
+        <div class="cara">
+            <h2>Aston Martin DBS Superleggera</h2>
+            <img src="Aston Martin DBS Superleggera.jpg">
+            <p>El Aston Martin DBS Superleggera es un deportivo de gran turismo con un motor V12 biturbo de hasta 715 caballos</p>
+			<a href="Gracias.html"><button>Comprar</button></a>
+        </div>
+
+		<div class="cara">
+            <h2>Aston Martin Valkyrie</h2>
+            <img src="Aston-Martin-Valkyrie.jpg">
+            <p>El Aston Martin Valkyrie es un automóvil deportivo de edición limitada, conocido por su avanzada tecnología y diseño aerodinámico.</p>
+			<a href="Gracias.html"><button>Comprar</button></a>
+        </div>
+
+		<img class="car-img" src="lamborghini.png" alt="Carros Lamborghini en venta" width="200px" height="300px">
+
+		<div class="carl">
+			<h2>Lamborghini Huracan</h2>
+			<img src="Lamborghini-Huracan.jpg">
+			<p>El Lamborghini Huracán es un deportivo que lo conocen por su diseño aerodinámico y agresivo, su motor V10 que genera 640 caballos</p>
+			<a href="Gracias.html"><button>Comprar</button></a>
+		</div>
+	
+		<div class="carl">
+			<h2>Lamborghini Avetador</h2>
+			<img src="AVENTADOR.jpg">
+			<p>El Lamborghini Huracán es un auto deportivo con un diseño aerodinámico, motor V10 de hasta 640 caballos de fuerza</p>
+			<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carl">
+				<h2>Lamborguini Urus</h2>
+				<img src="URUS.jpg">
+				<p>El Lamborghini Urus es un SUV de lujo con un diseño elegante y deportivo, motor V8 twin-turbo de hasta 650 caballos de fuerza</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+	
+			<div class="carl">
+				<h2>Lamborghini Countach</h2>
+				<img src="Countach.png">
+				<p>El Lamborghini Countach es un auto deportivo icónico de las décadas de 1970 a 1990, famoso por su diseño futurista.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+
+			<img class="car-img" src="Mclaren.png" alt="Carros Mclaren en venta" width="200px" height="300px">
+
+			<div class="carm">
+				<h2>McLaren Senna</h2>
+				<img src="Mclaren-senna.jpg">
+				<p>El McLaren Senna es un superdeportivo conocido por su diseño aerodinámico y agresivo, su motor V8 biturbo que genera 789 caballos</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carm">
+				<h2>McLaren 765LT</h2>
+				<img src="McLaren-765LT.jpg">
+				<p>El McLaren 765LT es un auto deportivo con un diseño aerodinámico, motor V8 biturbo de hasta 765 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carm">
+				<h2>McLaren 720S</h2>
+				<img src="McLaren-720S.jpg">
+				<p>El McLaren 720S es un superdeportivo con un diseño innovador, motor V8 biturbo de hasta 710 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carm">
+				<h2>McLaren P1</h2>
+				<img src="McLaren-P1.jpg">
+				<p>El McLaren P1 es un auto deportivo híbrido, famoso por su diseño futurista y un motor combinado que produce 903 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+
+			<img class="car-img" src="Maserati.png" alt="Carros Maserati en venta" width="200px" height="300px">
+
+			<div class="carma">
+				<h2>Maserati Ghibli</h2>
+				<img src="Maserati-Ghibli.jpg">
+				<p>El Maserati Ghibli es un sedán deportivo de lujo conocido por su diseño elegante, motor de gasolina V6 turboalimentado. </p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carma">
+				<h2>Maserati Quattroporte</h2>
+				<img src="Quattroporte.jpg">
+				<p>El Maserati Quattroporte es un sedán deportivo de lujo de tamaño completo, con un diseño refinado y potentes motores.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carma">
+				<h2>Maserati Levante</h2>
+				<img src="Levante.jpg">
+				<p>El Maserati Levante es un SUV de lujo con un diseño elegante y deportivo, motor que varía desde un V6 hasta un V8.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carma">
+				<h2>Maserati MC20</h2>
+				<img src="MC20.jpg">
+				<p>El Maserati MC20 es un superdeportivo con un diseño aerodinámico y motor V6 biturbo que genera 621 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+
+			<img class="car-img" src="porsche.jpg" alt="Carros Porsche en venta" width="200px" height="300px">
+
+			<div class="carp">
+				<h2>Porsche 911</h2>
+				<img src="Porsche-911.jpg">
+				<p>El Porsche 911 es un icónico deportivo, conocido por su diseño aerodinámico y motor que puede generar 502 caballos.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carp">
+				<h2>Porsche Cayenne</h2>
+				<img src="Cayenne.jpeg">
+				<p>El Porsche Cayenne es un SUV de lujo que combina el rendimiento deportivo con la comodidad para toda la familia.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carp">
+				<h2>Porsche Panamera</h2>
+				<img src="Panamera.jpg">
+				<p>El Porsche Panamera es un sedán de lujo que ofrece un equilibrio perfecto entre rendimiento y confort, con un motor de 690 caballos.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carp">
+				<h2>Porsche 917 K</h2>
+				<img src="917K.jpg">
+				<p>El Porsche 917 K es un legendario auto de carreras de la década de 1970, famoso por sus victorias en Le Mans y su potente motor.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<img class="car-img" src="Rolls-Royce.jpg" alt="Carros Rolls Royce en venta" width="200px" height="300px">
+
+			<div class="carr">
+				<h2>Rolls Royce Ghost</h2>
+				<img src="Rolls-Royce-Ghost.jpg">
+				<p>El Rolls Royce Ghost es un sedán de lujo conocido por su diseño elegante y sofisticado, equipado con un motor V12.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carr">
+				<h2>Rolls Royce Wraith</h2>
+				<img src="Rolls-Royce-Wraith.jpg">
+				<p>El Rolls Royce Wraith es un coupé de lujo reconocido por su diseño exclusivo y lujoso, alimentado por un motor V12 de 624 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carr">
+				<h2>Rolls Royce Phantom</h2>
+				<img src="Rolls-Royce-Phantom.jpeg">
+				<p>El Rolls Royce Phantom es un sedán de super lujo, famoso por su opulencia y su potente motor V12 de 563 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carr">
+				<h2>Rolls-Royce Cullinan</h2>
+				<img src="Rolls-Royce-Cullinan.jpg">
+				<p>El Rolls-Royce Cullinan es un SUV de ultra lujo con un diseño elegante y lujoso, motor V12 de hasta 563 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+
+
+			<img class="car-img" src="jaguar.jpg" alt="Carros Jaguar en venta" width="200px" height="300px">
+
+			<div class="carj">
+				<h2>Jaguar F-Type</h2>
+				<img src="Jaguar-F-Type.jpg">
+				<p>El Jaguar F-Type es un deportivo de alto rendimiento conocido por su diseño elegante y su potente motor, que genera 575 caballos.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carj">
+				<h2>Jaguar XJ</h2>
+				<img src="Jaguar-XJ.webp">
+				<p>El Jaguar XJ es una berlina de lujo, reconocido por su rendimiento suave y potente, perfecto para viajes largos y cómodos.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carj">
+				<h2>Jaguar Land Rover</h2>
+				<img src="Jaguar-Land-Rover.jpeg">
+				<p>El Jaguar Land Rover es un SUV de lujo conocido por su diseño robusto y su capacidad de rendimiento en cualquier terreno.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carj">
+				<h2>Jaguar C-Type</h2>
+				<img src="Jaguar-C-Type.jpg">
+				<p>El Jaguar C-Type es un automóvil deportivo clásico conocido por sus victorias en las 24 horas de Le Mans en la década de 1950.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+
+			<img class="car-img" src="tesla.png" alt="Carros Tesla en venta" width="200px" height="300px">
+
+			<div class="cart">
+				<h2>Tesla Model S</h2>
+				<img src="Tesla-Model-S.jpg">
+				<p>El Tesla Model S es un auto eléctrico de lujo conocido por su rendimiento excepcional y su autonomía de largo alcance.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="cart">
+				<h2>Tesla Model X</h2>
+				<img src="Tesla-Model-X.png">
+				<p>El Tesla Model X es un SUV eléctrico que destaca por su puertas de halcón únicas y su capacidad para llevar hasta 7 pasajeros. </p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="cart">
+				<h2>Tesla Model 3</h2>
+				<img src="Tesla-Model-3.jpg">
+				<p>El Tesla Model 3 es un auto eléctrico compacto que ofrece un rendimiento de alto nivel y una autonomía de hasta 358 millas.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="cart">
+				<h2>Tesla Model Y</h2>
+				<img src="Tesla-Model-Y.png">
+				<p>El Tesla Model Y es un SUV eléctrico compacto basado en el Model 3. Puede acomodar hasta 7 pasajeros.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+
+			<img class="car-img" src="mercedes.jpg" alt="Carros Mercedes en venta" width="200px" height="300px">
+
+			<div class="carme">
+				<h2>Mercedes-Benz S-Class</h2>
+				<img src="Mercedes-Benz-S-Class.jpg">
+				<p>El Mercedes-Benz S-Class es un vehículo de lujo que es conocido por su diseño sofisticado y su potente motor que produce hasta 463 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carme">
+				<h2>Mercedes-Benz E-Class</h2>
+				<img src="Mercedes-Benz-E-Class.jpg">
+				<p>El Mercedes-Benz E-Class es un auto de gama media con un diseño elegante, motor de hasta 362 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carme">
+				<h2>Mercedes-Benz C-Class</h2>
+				<img src="Mercedes-Benz-C-Class.jpg">
+				<p>El Mercedes-Benz C-Class es un sedán compacto de lujo con un diseño deportivo, motor de hasta 255 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+			<div class="carme">
+				<h2>Mercedes-Benz A-Class</h2>
+				<img src="Mercedes-Benz-A-Class.jpg">
+				<p>El Mercedes-Benz A-Class es un auto compacto que combina lujo y eficiencia, con un motor de hasta 188 caballos de fuerza.</p>
+				<a href="Gracias.html"><button>Comprar</button></a>
+			</div>
+			
+</body>
+
+</html>
